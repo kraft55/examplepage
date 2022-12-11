@@ -1,0 +1,74 @@
+html, body{
+    height: 98%;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bigbox {
+    flex: auto;
+    height: 25%;
+}
+
+.bigbox.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bigbox.header belownavigation{
+    width: 100%;
+    flex: 1;
+    border: solid;
+}
+
+.bigbox:nth-child(even){
+    background-color: rgb(211, 245, 255);
+}
+
+.bigbox.bigbox:nth-child(odd){
+    background-color: rgb(226, 226, 226);
+}
+
+#navigationbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#navigationbar div{
+    flex: auto;
+    width: 90%;
+}
+
+#headerlogo {
+    display: flex;
+    justify-content: safe start;
+}
+#headerlogo *{
+    flex: 1;
+    flex-grow: 0;
+    border: solid;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+.headerlink ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+
+.headerlink ul li{
+    flex: auto;
+    flex-grow: 1;
+    max-width: 20%;
+}
